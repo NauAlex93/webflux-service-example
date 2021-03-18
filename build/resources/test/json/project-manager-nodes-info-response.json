@@ -1,0 +1,21 @@
+[
+  {
+    "executionId": "string",
+    "id": "string",
+    "locked": true,
+    "metaOutputJson": {
+      "ports": [
+        {
+          "name": "string",
+          "output": {},
+          "type": "string"
+        }
+      ]
+    },
+    "moduleId": "string",
+    "projectId": "string",
+    "scriptArgs": "string",
+    "settingsJson": "string",
+    "status": "ready"
+  }
+]

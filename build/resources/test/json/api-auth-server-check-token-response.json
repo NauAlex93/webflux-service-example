@@ -1,0 +1,18 @@
+{
+  "user_name": "service",
+  "scope": [
+    "service"
+  ],
+  "active": true,
+  "exp": 1609235798,
+  "authorities": [
+    "API_JBR_RW",
+    "API_DTP_RW",
+    "API_MDC_RW",
+    "API_RSG_RW",
+    "API_DSR_RW",
+    "API_PRM_RW"
+  ],
+  "jti": "kzMyjbcbZwBsPkxWjoqGvW7AkHY",
+  "client_id": "service"
+}

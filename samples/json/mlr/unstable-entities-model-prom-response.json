@@ -1,0 +1,2047 @@
+{
+  "predicate": [
+    {
+      "$type": "COMMA_LIST",
+      "paramId": "MODEL_ID",
+      "value": "1933"
+    }
+  ],
+  "filterConditions": {
+    "paging": {
+      "limit": 25,
+      "offset": 0
+    },
+    "ordering": []
+  },
+  "total": 3410,
+  "filtered": 1,
+  "entities": [
+    {
+      "id": 1933,
+      "creationDate": 1523992910798,
+      "status": "MODEL_PROM",
+      "params": [
+        {
+          "id": "MODEL_ANALYTICS_DEPTH",
+          "values": [
+            "Machine Learning"
+          ],
+          "name": "Уровень глубины аналитики",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IMPLEMENTATION_COMPLEXITY",
+          "values": [
+            "Высокая"
+          ],
+          "name": "Сложность реализации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VERIFICATION_DATE",
+          "values": [
+            "1524603600000"
+          ],
+          "name": "Фактическая дата окончания верификации модели",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_AB_TEST_EXISTS",
+          "values": [
+            "Не применимо"
+          ],
+          "name": "Наличие A/B теста",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATOR_DEPARTMENT",
+          "values": [
+            "10309026"
+          ],
+          "name": "Подразделение валидации",
+          "paramType": "DEPARTMENT",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_ID",
+          "values": [
+            "1933"
+          ],
+          "name": "ID модели",
+          "paramType": "COMPUTED",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IMPLEMENTATION_SYSTEM",
+          "values": [
+            "Среда исполнения моделей (Modeling Workspace, MWS)"
+          ],
+          "name": "Система, в которой внедрена/планируется к внедрению",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IMPLEMENTATION_DATE",
+          "values": [
+            "1525132800000"
+          ],
+          "name": "Планируемая дата внедрения модели",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_SAMPLE",
+          "values": [
+            "9833",
+            "8781"
+          ],
+          "name": "Выборка",
+          "paramType": "SAMPLE",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_NEEDS_PILOTING",
+          "values": [
+            "Нет"
+          ],
+          "name": "Требуется пилотирование",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Флаг необходимости проведения пилота.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_EMPLOYER_PERSON",
+          "values": [
+            "09355564-f8d7-9957-4ff2-3d0cbb69afdf"
+          ],
+          "name": "Контактное лицо от заказчика",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "ФИО ответственного сотрудника от подразделения, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_PLAN_IT_VALIDATION_END_DATE",
+          "values": [
+            "1547931600000"
+          ],
+          "name": "Плановая дата окончания ИТ-валидации",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Планируемая дата окончания ИТ-валидации.\n\nОтветственный за заполнение атрибута: Контактное лицо от ИТ-валидации."
+        },
+        {
+          "id": "MODEL_CONSEQUENCES_COVERAGE",
+          "values": [
+            "Средний"
+          ],
+          "name": "Охват последствий",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_DEVELOPER_PERSON",
+          "values": [
+            "ebe2f8ff-7dc4-b771-bf29-d3cb6c760889",
+            "28eb8f64-4a93-4377-8673-501b78cf16cb"
+          ],
+          "name": "Контактное лицо от разработчика",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_BANK_CDS",
+          "values": [
+            "ab6f96f8-8f3e-492e-847b-4c5124f1cfa8"
+          ],
+          "name": "CDS Банка",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "ФИО руководителя Центра развития компетенций по исследованию данных.\n\nОтветственный за заполнение атрибута: CDS Блока."
+        },
+        {
+          "id": "MODEL_BD",
+          "values": [
+            "Не применимо",
+            "ПАО Сбербанк"
+          ],
+          "name": "Наименование ДБ и ДЗО",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_SUPERVISION_DEGREE",
+          "values": [
+            "Отсутствует"
+          ],
+          "name": "Степень регуляторного надзора",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_DEVELOPER_DEPARTMENT_CHIEF",
+          "values": [
+            "229ef768-a82d-ff0d-3719-bae76c7b5676"
+          ],
+          "name": "Руководитель подразделения разработчика",
+          "paramType": "USER",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IT_VALIDATION_FACT_END_DATE",
+          "values": [
+            "1547931600000"
+          ],
+          "name": "Фактическая дата окончания ИТ-валидации",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Автоматически заполняемый атрибут на основании фактической даты окончания последней ИТ-валидации модели."
+        },
+        {
+          "id": "MODEL_METRICS",
+          "values": [
+            "8782",
+            "9834"
+          ],
+          "name": "Метрика",
+          "paramType": "METRICS",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_MATERIALITY_LEVEL",
+          "values": [
+            "Высокий"
+          ],
+          "name": "Уровень материальности",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_TYPE",
+          "values": [
+            "Credit Process"
+          ],
+          "name": "Тип модели",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Тип создаваемой модели. Участвует в автоматическом формировании поля \"Код модели\".\n\nОтветственный за заполнение атрибута: Контактное лицо от разработчика."
+        },
+        {
+          "id": "MODEL_RISK_TYPE",
+          "values": [
+            "Кредитный"
+          ],
+          "name": "Вид риска",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_PROCESS_CODE",
+          "values": [
+            "Иное"
+          ],
+          "name": "'Код бизнес-процесса / Имя'",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Код и наименование бизнес-сервиса из АС ЕСП, в который внедряется модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от владельца."
+        },
+        {
+          "id": "MODEL_COORDINATION_COMPLIANCE",
+          "values": [
+            "Не применимо"
+          ],
+          "name": "Соответствие требованиям в заявке",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_NEEDS_NO_IT_VALIDATION",
+          "values": [
+            "Нет"
+          ],
+          "name": "ИТ-валидация не требуется",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Флаг об отсутствии необходимости проведения ИТ-валидации.\n\nОтветственный за заполнение атрибута: Руководитель подразделения  ИТ-валидации."
+        },
+        {
+          "id": "MODEL_END",
+          "values": [
+            "1519776000000"
+          ],
+          "name": "Плановая дата окончания разработки",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IT_VALIDATION_RESULT",
+          "values": [
+            "Жёлтый"
+          ],
+          "name": "Результат ИТ-валидации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Результат ИТ-валидации модели.\n\nАвтоматически заполняемый атрибут на основании результата последней ИТ-валидации модели."
+        },
+        {
+          "id": "MODEL_NEEDS_NO_VALIDATION",
+          "values": [
+            "Нет"
+          ],
+          "name": "Валидация не требуется",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Флаг об отсутствии необходимости проведения валидации.\n\nОтветственный за заполнение атрибута: Руководитель подразделения  валидации."
+        },
+        {
+          "id": "MODEL_MONITORING_DATE",
+          "values": [
+            "1519776000000"
+          ],
+          "name": "Дата проведения последнего мониторинга модели",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_PARENT_INITIATIVE",
+          "values": [
+            "3046"
+          ],
+          "name": "Инициатива",
+          "paramType": "INITIATIVE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Инициатива, в рамках которой разрабатывается/разработана модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_IT_VALIDATOR_DEPARTMENT",
+          "values": [
+            "Отдел разработки и IT-валидации"
+          ],
+          "name": "Подразделение ИТ-валидации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_CDS",
+          "values": [
+            "cedab732-5c07-88bf-762e-bebef34af90f",
+            "c75f1adb-070b-571e-65b1-3cf75bd5eae6"
+          ],
+          "name": "CDS Блока",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "ФИО сотрудника, отвечающего за разработку всех моделей Блока, с которым будет прорабатываться модель.\n\nОтветственный за заполнение атрибута: CDS Блока."
+        },
+        {
+          "id": "MODEL_SUB_TYPE",
+          "values": [
+            "Probability of Default (PD)"
+          ],
+          "name": "Подтип модели",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_RISK_MODEL",
+          "values": [
+            "Да"
+          ],
+          "name": "Риск модель?",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_OWNER_BLOCK",
+          "values": [
+            "10149525"
+          ],
+          "name": "Блок владельца",
+          "paramType": "GROUP",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Блок, ответственный за управление процессом, для которого разрабатывается модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_DEVELOPER_DEPARTMENT",
+          "values": [
+            "10182368"
+          ],
+          "name": "Подразделение разработчика",
+          "paramType": "DEPARTMENT",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_AI",
+          "values": [
+            "Нет"
+          ],
+          "name": "AI модель",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Автоматически заполняемый системой атрибут. Модель является AI-моделью, если она относится к одному из Классов AI задач, при ее разработке применялся любой из Признаков автоматизации разработки, а также использовался любой из перечисленных Методов моделирования: нейронная сеть, нейроная сеть Кохонена, случайный лес, градиентный бустинг, ансамбль нескольких алгоритмов, коллаборативная фильтрация, латентно-семантический анализ, условные случайные поля."
+        },
+        {
+          "id": "MODEL_PRIMARY_ANALYSIS_DATE",
+          "values": [
+            "1517432400000"
+          ],
+          "name": "Фактическая дата окончания анализа данных",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IMPORTANCE",
+          "values": [
+            "Высокая"
+          ],
+          "name": "Важность для бизнеса",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATION_PERIOD",
+          "values": [
+            "Ежегодная"
+          ],
+          "name": "Периодичность валидации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATION_FACT_END_DATE",
+          "values": [
+            "1610357328887"
+          ],
+          "name": "Фактическая дата окончания валидации",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_BENEFITS",
+          "values": [
+            "Снижение потерь Банка (в т.ч. снижение рисков, включая штрафы и пени)"
+          ],
+          "name": "Выгода от реализации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_OWNER_DEPARTMENT",
+          "values": [
+            "-9546"
+          ],
+          "name": "Подразделение владельца",
+          "paramType": "DEPARTMENT",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Подразделение, ответственное за управление процессом, для которого разрабатывается модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_EMPLOYER_DEPARTMENT",
+          "values": [
+            "-1556"
+          ],
+          "name": "Подразделение заказчика",
+          "paramType": "DEPARTMENT",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Подразделение, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_VALIDATION",
+          "values": [
+            "5806"
+          ],
+          "name": "ID Валидации",
+          "paramType": "VALIDATION",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_STATUS",
+          "values": [
+            "В эксплуатации"
+          ],
+          "name": "Статус модели",
+          "paramType": "STATUS",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_EMPLOYER_BLOCK",
+          "values": [
+            "10149525"
+          ],
+          "name": "Блок заказчика",
+          "paramType": "GROUP",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Блок, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_CODE",
+          "values": [
+            "RISK_PD_7M_CORP_PD_NEWCL_M"
+          ],
+          "name": "Код модели",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Буквенно-цифровое обозначение модели. Первые два набора символов кода формируются автоматически на базе значений полей \"Блок CDS\" и \"Тип модели\".\n\nОтветственный за заполнение атрибута: Контактное лицо от разработчика."
+        },
+        {
+          "id": "MODEL_IMPLEMENTATION_SYSTEM_OWNER",
+          "values": [
+            "6c3da430-d207-4da6-ae25-1cf88acd3d32"
+          ],
+          "name": "Владелец системы, в которую внедрена/планируется к внедрению",
+          "paramType": "USER",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATOR_PERSON",
+          "values": [
+            "085253bf-3570-18e0-b9e1-5b238ff2e61b"
+          ],
+          "name": "Контактное лицо от валидации",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_NAME",
+          "values": [
+            "Модель PD из проекта 7М для новых клиентов с большим количеством данных из ЕКС"
+          ],
+          "name": "Наименование модели",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Название модели, которая будет создана.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_BUSINESS",
+          "values": [
+            "Ценообразование и отсечение клиентов"
+          ],
+          "name": "Бизнес-задача, решаемая за счет реализации",
+          "paramType": "TEXTAREA",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_ORDER_NUMBER",
+          "values": [
+            "Решение КПКИ №1029§75 от 25.04.2018"
+          ],
+          "name": "Номер распоряжения о внедрении модели",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Номер распоряжения в СЭОДО о вводе модели в промышленную эксплуатацию.\n\nОтветственный за заполнение атрибута: Контактное от владельца"
+        },
+        {
+          "id": "MODEL_BLACKBOX",
+          "values": [
+            "Нет"
+          ],
+          "name": "BlackBox модель",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_DEVELOPER_BLOCK",
+          "values": [
+            "10262981"
+          ],
+          "name": "Блок разработчика",
+          "paramType": "GROUP",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_PATCH",
+          "values": [
+            "24415"
+          ],
+          "name": "Рекомендация",
+          "paramType": "PATCH",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_NEEDS_NO_IMPLEMENTATION",
+          "values": [
+            "Нет"
+          ],
+          "name": "Внедрение не требуется",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Флаг необходимости внедрения модели в промышленную эксплуатацию.\n\nОтветственный за заполнение атрибута: Контактное лицо от владельца."
+        },
+        {
+          "id": "MODEL_DEVELOPMENT",
+          "values": [
+            "16341"
+          ],
+          "name": "Разработка",
+          "paramType": "DEVELOPMENT",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_CREATION_DATE",
+          "values": [
+            "1519171200000"
+          ],
+          "name": "Дата создания карточки модели",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IT_VALIDATION",
+          "values": [
+            "10055"
+          ],
+          "name": "ID ИТ-валидации",
+          "paramType": "IT_VALIDATION",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_INTRO_PERSON",
+          "values": [
+            "5f345c13-56d4-7c58-b87d-906bb5984b27",
+            "352fa215-ffec-4e2c-a8ff-e6b85303d897",
+            "f41305d8-c45f-d89d-b65e-3e0fbec69a3b",
+            "df7d4d32-7f2e-42a3-9559-f8b7a5f0f340",
+            "e23f6011-8924-849a-59b6-f3520a9f525f"
+          ],
+          "name": "Команда внедрения",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Группа сотрудников Банка, участвующих во внедрении изменения стратегии, и отвечающих за разработку решения по внедрению изменения стратегии в промышленные системы.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "MODEL_RISK_SEGMENT",
+          "values": [
+            "Бюджетное учреждение"
+          ],
+          "name": "Риск-сегмент",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_PLAN_VALIDATION_END_DATE",
+          "values": [
+            "1525035600000"
+          ],
+          "name": "Плановая дата окончания валидации",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_CDS_BLOCK",
+          "values": [
+            "10149525"
+          ],
+          "name": "Блок CDS",
+          "paramType": "GROUP",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Блок, силами которого будет разрабатываться модель. Должен совпадать с Блоком, к которому относится CDS. Участвует в автоматическом формировании поля \"Код модели\"\n\nОтветственный за заполнение атрибута: CDS Блока."
+        },
+        {
+          "id": "MODEL_FACT_IMPLEMENTATION_DATE",
+          "values": [
+            "1564606800000"
+          ],
+          "name": "Фактическая дата внедрения модели",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IMPORTANCE_UMR",
+          "values": [
+            "Средняя"
+          ],
+          "name": "Степень значимости (согласно Политике УМР)",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Степень значимости в соответствии с Политикой по управлению модельным риском.\n\nОтветственный за заполнение атрибута: Автор карточки модели/CDS Блока."
+        },
+        {
+          "id": "MODEL_INTEREST",
+          "values": [
+            "Банк"
+          ],
+          "name": "Банк или Группа?",
+          "paramType": "LIST",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_REGULATORY_MODEL",
+          "values": [
+            "Да"
+          ],
+          "name": "Регуляторная модель?",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IT_VALIDATOR_PERSON",
+          "values": [
+            "8257c687-f947-07f2-3249-81c177c51b4c"
+          ],
+          "name": "Контактное лицо от ИТ-валидации",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_ANALYTICS_TYPE",
+          "values": [
+            "Предписывающая"
+          ],
+          "name": "Тип аналитики",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_DEVELOPMENT_DATE",
+          "values": [
+            "1524517200000"
+          ],
+          "name": "Фактическая дата окончания разработки модели",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_SCOPE",
+          "values": [
+            "Кредитный процесс"
+          ],
+          "name": "Направление",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATOR_DEPARTMENT_CHIEF",
+          "values": [
+            "d8e812db-58f2-3e2f-2130-09c608fb0e3e",
+            "db34f67b-beda-4ed6-a8df-6caeccd993e5"
+          ],
+          "name": "Руководитель подразделения валидации",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_START",
+          "values": [
+            "1509408000000"
+          ],
+          "name": "Плановая дата начала разработки",
+          "paramType": "DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_PVR",
+          "values": [
+            "Нет"
+          ],
+          "name": "Модель ПВР",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IS_CASCADE",
+          "values": [
+            "Нет"
+          ],
+          "name": "Признак каскадной модели",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Является ли модель каскадной?\n\nОтветственный за заполнение атрибута: Контактное лицо от валидации, контактное лицо от разработчика."
+        },
+        {
+          "id": "MODEL_EXCLUDED",
+          "values": [
+            "Нет"
+          ],
+          "name": "Исключить из отчётности",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VALIDATION_RESULT",
+          "values": [
+            "Зелёный"
+          ],
+          "name": "Результат валидации",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "Результат валидации модели.\n\nАвтоматически заполняемый атрибут на основании результата последней валидации модели."
+        },
+        {
+          "id": "MODEL_OWNER_PERSON",
+          "values": [
+            "062f46d4-33b5-4fff-a991-d5c296d7c72e",
+            "28eb8f64-4a93-4377-8673-501b78cf16cb",
+            "e6800611-6e02-4c40-8fe9-044bdb70267c"
+          ],
+          "name": "Контактное лицо от владельца",
+          "paramType": "USER",
+          "isMultiSelect": true,
+          "isRequired": false,
+          "isEditable": false,
+          "hint": "ФИО cотрудника, ответственного за  процесс, в который внедряется модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+        },
+        {
+          "id": "NOTIFICATION_SUBSCRIBERS_MODEL",
+          "values": [
+            "352fa215-ffec-4e2c-a8ff-e6b85303d897",
+            "d959ca73-77fd-5e2e-9f70-9d5e6e58e5b9",
+            "f41305d8-c45f-d89d-b65e-3e0fbec69a3b"
+          ],
+          "name": "Подписка на обновления",
+          "paramType": "USER",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_VERSION",
+          "values": [
+            "1.0.1"
+          ],
+          "name": "Версия модели",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_TARGET_INDICATION",
+          "values": [
+            "Дефолт по методике №3437"
+          ],
+          "name": "Целевой признак",
+          "paramType": "STRING",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_AUTHOR",
+          "values": [
+            "7312540d-5179-8f9e-b7ae-ac465dc40640"
+          ],
+          "name": "Автор карточки модели",
+          "paramType": "USER",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_IT_VALIDATOR_DEPARTMENT_CHIEF",
+          "values": [
+            "8257c687-f947-07f2-3249-81c177c51b4c"
+          ],
+          "name": "Руководитель подразделения ИТ-валидации",
+          "paramType": "USER",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_CDS_DEVELOPMENT",
+          "values": [
+            "Да"
+          ],
+          "name": "Разработка силами CDS Банка",
+          "paramType": "CHECKBOX",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "MODEL_COORDINATION_DATE",
+          "values": [
+            "1509310800000"
+          ],
+          "name": "Фактическая дата согласования заявки на разработку",
+          "paramType": "COMPUTED_DATE",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        },
+        {
+          "id": "IS_ACTIVE_MODEL",
+          "values": [
+            "Да"
+          ],
+          "name": "Активная?",
+          "paramType": "LIST",
+          "isMultiSelect": false,
+          "isRequired": false,
+          "isEditable": false
+        }
+      ],
+      "paramGroups": [],
+      "versions": [],
+      "paramOptions": {},
+      "tpe": "Model",
+      "workflowId": "c5268c5b-1164-4b51-84e4-b2278829ce49"
+    }
+  ],
+  "params": [
+    {
+      "id": "MODEL_ID",
+      "name": "ID модели",
+      "paramType": "COMPUTED",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_CODE",
+      "name": "Идентификатор модели",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Буквенно-цифровое обозначение модели. Первые два набора символов кода формируются автоматически на базе значений полей \"Блок CDS\" и \"Тип модели\".\n\nОтветственный за заполнение атрибута: Контактное лицо от разработчика."
+    },
+    {
+      "id": "MODEL_NAME",
+      "name": "Наименование модели",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Название модели, которая будет создана.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_VERSION",
+      "name": "Версия модели",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_STATUS",
+      "name": "Статус модели",
+      "paramType": "STATUS",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Утверждение заявки"
+        },
+        {
+          "value": "Черновик"
+        },
+        {
+          "value": "Утверждение заявки CDS Банка"
+        },
+        {
+          "value": "Подготовка данных"
+        },
+        {
+          "value": "Назначение разработчика"
+        },
+        {
+          "value": "Анализ заявки"
+        },
+        {
+          "value": "Принятие решения о внедрении и назначение команды внедрения"
+        },
+        {
+          "value": "Утверждение заявки заказчиком"
+        },
+        {
+          "value": "Разработка"
+        },
+        {
+          "value": "Верификация результатов моделирования"
+        },
+        {
+          "value": "Назначение валидатора"
+        },
+        {
+          "value": "Валидация"
+        },
+        {
+          "value": "Утверждение отчёта о валидации"
+        },
+        {
+          "value": "Принятие решения о пилотировании"
+        },
+        {
+          "value": "Пилотирование"
+        },
+        {
+          "value": "Назначение владельца модели"
+        },
+        {
+          "value": "Ожидание ввода в эксплуатацию"
+        },
+        {
+          "value": "Разработка промышленного решения"
+        },
+        {
+          "value": "Назначение ИТ-валидатора"
+        },
+        {
+          "value": "ИТ-валидация"
+        },
+        {
+          "value": "Утверждение отчёта об ИТ-валидации"
+        },
+        {
+          "value": "Согласование распоряжения на ввод в действие"
+        },
+        {
+          "value": "Внедрение"
+        },
+        {
+          "value": "В эксплуатации"
+        },
+        {
+          "value": "Снята с эксплуатации"
+        },
+        {
+          "value": "Отменена"
+        },
+        {
+          "value": "Верификация степени значимости"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_CDS_BLOCK",
+      "name": "Блок CDS",
+      "paramType": "GROUP",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Блок, силами которого будет разрабатываться модель. Должен совпадать с Блоком, к которому относится CDS. Участвует в автоматическом формировании поля \"Код модели\"\n\nОтветственный за заполнение атрибута: CDS Блока."
+    },
+    {
+      "id": "MODEL_CDS",
+      "name": "CDS Блока",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "ФИО сотрудника, отвечающего за разработку всех моделей Блока, с которым будет прорабатываться модель.\n\nОтветственный за заполнение атрибута: CDS Блока."
+    },
+    {
+      "id": "MODEL_START",
+      "name": "Плановая дата начала разработки",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_END",
+      "name": "Плановая дата окончания разработки",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_CDS_DEVELOPMENT",
+      "name": "Разработка силами CDS Банка",
+      "paramType": "CHECKBOX",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Да"
+        },
+        {
+          "value": "Нет"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_BANK_CDS",
+      "name": "CDS Банка",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "ФИО руководителя Центра развития компетенций по исследованию данных.\n\nОтветственный за заполнение атрибута: CDS Блока."
+    },
+    {
+      "id": "MODEL_EMPLOYER_BLOCK",
+      "name": "Блок заказчика",
+      "paramType": "GROUP",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Блок, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_EMPLOYER_DEPARTMENT",
+      "name": "Подразделение заказчика",
+      "paramType": "DEPARTMENT",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Подразделение, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_EMPLOYER_PERSON",
+      "name": "Контактное лицо от заказчика",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "ФИО ответственного сотрудника от подразделения, для которого будет реализована модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_OWNER_BLOCK",
+      "name": "Блок владельца",
+      "paramType": "GROUP",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Блок, ответственный за управление процессом, для которого разрабатывается модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_OWNER_DEPARTMENT",
+      "name": "Подразделение владельца",
+      "paramType": "DEPARTMENT",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Подразделение, ответственное за управление процессом, для которого разрабатывается модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_OWNER_PERSON",
+      "name": "Контактное лицо от владельца",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "ФИО cотрудника, ответственного за  процесс, в который внедряется модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_AUTHOR",
+      "name": "Автор карточки модели",
+      "paramType": "USER",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_CREATION_DATE",
+      "name": "Дата создания карточки модели",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_DEVELOPER_BLOCK",
+      "name": "Блок разработчика",
+      "paramType": "GROUP",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_DEVELOPER_DEPARTMENT",
+      "name": "Подразделение разработчика",
+      "paramType": "DEPARTMENT",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_DEVELOPER_DEPARTMENT_CHIEF",
+      "name": "Руководитель подразделения разработчика",
+      "paramType": "USER",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_DEVELOPER_PERSON",
+      "name": "Контактное лицо от разработчика",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_VALIDATOR_DEPARTMENT",
+      "name": "Подразделение валидации",
+      "paramType": "DEPARTMENT",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_VALIDATOR_DEPARTMENT_CHIEF",
+      "name": "Руководитель подразделения валидации",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_VALIDATOR_PERSON",
+      "name": "Контактное лицо от валидации",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IT_VALIDATOR_DEPARTMENT",
+      "name": "Подразделение ИТ-валидации",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Отдел разработки и IT-валидации"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IT_VALIDATOR_DEPARTMENT_CHIEF",
+      "name": "Руководитель подразделения ИТ-валидации",
+      "paramType": "USER",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IT_VALIDATOR_PERSON",
+      "name": "Контактное лицо от ИТ-валидации",
+      "paramType": "USER",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_RISK_TYPE",
+      "name": "Вид риска",
+      "paramType": "LIST",
+      "isMultiSelect": true,
+      "options": [
+        {
+          "value": "Не применимо"
+        },
+        {
+          "value": "Кредитный",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Операционный",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Ликвидности",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Интегрированный",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Имущественный",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Правовой",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Иное",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Рыночный риск торговой книги",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Кредитный риск контрагента по ОФР",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        },
+        {
+          "value": "Рыночный риск банковской книги",
+          "condition": "MODEL_RISK_MODEL = 'Да'"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IMPORTANCE_UMR",
+      "name": "Степень значимости",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Низкая"
+        },
+        {
+          "value": "Средняя"
+        },
+        {
+          "value": "Высокая"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Степень значимости в соответствии с ВНД-3194 \"Политика по управлению модельным риском\".\n\nОтветственный за заполнение атрибута Автор карточки модели/CDS Блока"
+    },
+    {
+      "id": "MODEL_VALIDATION_FACT_END_DATE",
+      "name": "Фактическая дата окончания валидации",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IT_VALIDATION_FACT_END_DATE",
+      "name": "Фактическая дата окончания ИТ-валидации",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Автоматически заполняемый атрибут на основании фактической даты окончания последней ИТ-валидации модели."
+    },
+    {
+      "id": "MODEL_SUPERVISION_DEGREE",
+      "name": "Степень регуляторного надзора",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Отсутствует"
+        },
+        {
+          "value": "Средняя"
+        },
+        {
+          "value": "Высокая"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_NEEDS_PILOTING",
+      "name": "Требуется пилотирование",
+      "paramType": "CHECKBOX",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Флаг необходимости проведения пилота.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_RISK_ESTIMATION",
+      "name": "Оценка модельного риска - ухудшение качества модели (млн. руб.)",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_VALIDATION_RESULT",
+      "name": "Результат валидации",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Зелёный"
+        },
+        {
+          "value": "Жёлтый"
+        },
+        {
+          "value": "Красный"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Результат валидации модели.\n\nАвтоматически заполняемый атрибут на основании результата последней валидации модели."
+    },
+    {
+      "id": "MODEL_IT_VALIDATION_RESULT",
+      "name": "Результат ИТ-валидации",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Зелёный"
+        },
+        {
+          "value": "Жёлтый"
+        },
+        {
+          "value": "Красный"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Результат ИТ-валидации модели.\n\nАвтоматически заполняемый атрибут на основании результата последней ИТ-валидации модели."
+    },
+    {
+      "id": "MODEL_FACT_IMPLEMENTATION_DATE",
+      "name": "Фактическая дата внедрения модели",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_IMPLEMENTATION_DATE",
+      "name": "Планируемая дата внедрения модели",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_COORDINATION_DATE",
+      "name": "Фактическая дата согласования заявки на разработку",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PRIMARY_ANALYSIS_DATE",
+      "name": "Фактическая дата окончания анализа данных",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_VERIFICATION_DATE",
+      "name": "Фактическая дата окончания верификации модели",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PILOTING_DATE",
+      "name": "Фактическая дата окончания пилотирования модели",
+      "paramType": "COMPUTED_DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PROCESS_CODE",
+      "name": "'Код бизнес-процесса / Имя'",
+      "paramType": "LIST",
+      "isMultiSelect": true,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Код и наименование бизнес-сервиса из АС ЕСП, в который внедряется модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от владельца."
+    },
+    {
+      "id": "MODEL_IMPLEMENTATION_SYSTEM",
+      "name": "Среда исполнения",
+      "paramType": "LIST",
+      "isMultiSelect": true,
+      "options": [
+        {
+          "value": "Airflow",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "АС ВРМ Правовое обеспечение",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Airflow",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "АС ВРМ Правовое обеспечение",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "ММЗ (мониторинг мошеннических заявок)",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "ПИМ",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "ППРБ.СПР",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "SAS",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Transact SM",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "PayBack",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Excel",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Transact",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "АМРЛиРТ",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "АС Атлант",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Другое",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Нет'"
+        },
+        {
+          "value": "Не применимо",
+          "condition": "MODEL_NEEDS_NO_IMPLEMENTATION = 'Да'"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PLAN_VALIDATION_END_DATE",
+      "name": "Плановая дата окончания валидации",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PLAN_IT_VALIDATION_END_DATE",
+      "name": "Плановая дата окончания ИТ-валидации",
+      "paramType": "DATE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Планируемая дата окончания ИТ-валидации.\n\nОтветственный за заполнение атрибута: Контактное лицо от ИТ-валидации."
+    },
+    {
+      "id": "MODEL_AUTOMONITORING",
+      "name": "Автомониторинг в webfluxExample.DS",
+      "paramType": "CHECKBOX",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Значение \"Да\" доступно для выбора в случае, если указано наименование Витрины и Workflow.\n\nОтветственный за заполнение атрибута: Контактное лицо от валидатора/ИТ-валидатора."
+    },
+    {
+      "id": "MODEL_AUTOMONITORING_SHOWCASE",
+      "name": "Наименование витрины",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Ответственный за заполнение атрибута: Контактное лицо от валидатора/ИТ-валидатора."
+    },
+    {
+      "id": "MODEL_AUTOMONITORING_WORKFROW_NAME",
+      "name": "Наименование WORKFLOW",
+      "paramType": "STRING",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Ответственный за заполнение атрибута: Контактное лицо от валидатора/ИТ-валидатора."
+    },
+    {
+      "id": "MODEL_BLACKBOX",
+      "name": "BlackBox модель",
+      "paramType": "CHECKBOX",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_CANCELLATION_REASON",
+      "name": "Причина отмены",
+      "paramType": "LIST",
+      "isMultiSelect": true,
+      "options": [
+        {
+          "value": "Заведена ошибочно"
+        },
+        {
+          "value": "Недостаточно данных"
+        },
+        {
+          "value": "Неудовлетворительное качество модели (по результатам разработки)"
+        },
+        {
+          "value": "По результатам верификации"
+        },
+        {
+          "value": "По результатам валидации"
+        },
+        {
+          "value": "По результатам пилота"
+        },
+        {
+          "value": "Внедрение модели признано нецелосообразным"
+        },
+        {
+          "value": "Потеря актуальности инициативы для Заказчика/Владельца"
+        },
+        {
+          "value": "Иное"
+        },
+        {
+          "value": "Данные отсутствуют"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Причина перевода модели в статус \"Отменена\".\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика или владельца."
+    },
+    {
+      "id": "MODEL_PROM_CANCELLATION_REASON",
+      "name": "Причина снятия с эксплуатации",
+      "paramType": "LIST",
+      "isMultiSelect": true,
+      "options": [
+        {
+          "value": "Статус \"В эксплуатации\" был проставлен ошибочно"
+        },
+        {
+          "value": "Потеря актуальности инициативы для Заказчика/Владельца"
+        },
+        {
+          "value": "Изменение бизнес-процесса"
+        },
+        {
+          "value": "По результатам валидации"
+        },
+        {
+          "value": "По результатам мониторинга"
+        },
+        {
+          "value": "Иное"
+        },
+        {
+          "value": "Данные отсутствуют"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Причина перевода модели в статус \"Снята с эксплуатации\".\n\nОтветственный за заполнение атрибута: Контактное лицо от владельца."
+    },
+    {
+      "id": "MODEL_ANALYTICS_TYPE",
+      "name": "Тип аналитики",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Описательная"
+        },
+        {
+          "value": "Предписывающая"
+        },
+        {
+          "value": "Прогнозная"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "MODEL_PARENT_INITIATIVE",
+      "name": "Инициатива",
+      "paramType": "INITIATIVE",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Инициатива, в рамках которой разрабатывается/разработана модель.\n\nОтветственный за заполнение атрибута: Контактное лицо от заказчика."
+    },
+    {
+      "id": "MODEL_TYPE",
+      "name": "Тип модели",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "AML",
+          "code": "AML"
+        },
+        {
+          "value": "RELIABILITY",
+          "code": "RLBT"
+        },
+        {
+          "value": "STRESS_TEST",
+          "code": "STST"
+        },
+        {
+          "value": "CASH_FLOW",
+          "code": "CFLW"
+        },
+        {
+          "value": "FRAUD",
+          "code": "FRD"
+        },
+        {
+          "value": "AMA",
+          "code": "AMA"
+        },
+        {
+          "value": "OUTFLOW",
+          "code": "OFLW"
+        },
+        {
+          "value": "PRICE",
+          "code": "PRC"
+        },
+        {
+          "value": "MTM",
+          "code": "MTM"
+        },
+        {
+          "value": "VALUATION",
+          "code": "VLTN"
+        },
+        {
+          "value": "TEXT_MINING",
+          "code": "TMNG"
+        },
+        {
+          "value": "NONE",
+          "code": "NON"
+        },
+        {
+          "value": "PFE",
+          "code": "PFE"
+        },
+        {
+          "value": "PD",
+          "code": "PD"
+        },
+        {
+          "value": "EAD",
+          "code": "EAD"
+        },
+        {
+          "value": "LGD",
+          "code": "LGD"
+        },
+        {
+          "value": "RBL",
+          "code": "RBL"
+        },
+        {
+          "value": "RBP",
+          "code": "RBP"
+        },
+        {
+          "value": "COLLECTION",
+          "code": "CLCT"
+        },
+        {
+          "value": "ECAP",
+          "code": "ECP"
+        },
+        {
+          "value": "EAR",
+          "code": "EAR"
+        },
+        {
+          "value": "UMP",
+          "code": "UMP"
+        },
+        {
+          "value": "FDC",
+          "code": "FDC"
+        },
+        {
+          "value": "RESPONSE",
+          "code": "RSPN"
+        },
+        {
+          "value": "CHURN",
+          "code": "CHRN"
+        },
+        {
+          "value": "SPEND_PREDICTION",
+          "code": "SPRD"
+        },
+        {
+          "value": "SOCIOTYPE",
+          "code": "SCTP"
+        },
+        {
+          "value": "INCOME",
+          "code": "INCM"
+        },
+        {
+          "value": "TIME_SERIES",
+          "code": "TMSR"
+        },
+        {
+          "value": "OTHER",
+          "code": "OTHR"
+        },
+        {
+          "value": "CLIENT_BASED_LIMIT",
+          "code": "CBL"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Тип создаваемой модели. Участвует в автоматическом формировании поля \"Код модели\".\n\nОтветственный за заполнение атрибута: Контактное лицо от разработчика."
+    },
+    {
+      "id": "MODEL_AB_TEST_EXISTS",
+      "name": "Наличие A/B теста",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false,
+      "hint": "Если модель используется в продукте, для которого выполняется A/B тест, необходимо выбрать \"Да\""
+    },
+    {
+      "id": "MODEL_SUB_TYPE",
+      "name": "Подтип модели",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [],
+      "isRequired": false,
+      "isSystem": false
+    },
+    {
+      "id": "IS_ACTIVE_MODEL",
+      "name": "Активная?",
+      "paramType": "LIST",
+      "isMultiSelect": false,
+      "options": [
+        {
+          "value": "Да"
+        },
+        {
+          "value": "Нет"
+        }
+      ],
+      "isRequired": false,
+      "isSystem": false
+    }
+  ],
+  "editModeAllowed": false
+}

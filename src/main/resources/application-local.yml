@@ -1,0 +1,71 @@
+server:
+  port: 8089
+  ssl:
+    enabled: false
+
+spring:
+  application:
+    name: sds-template-selector-service
+  liquibase:
+    change-log: classpath:db/changelog.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${MANAGEMENT_WEB_EXPOSURE:*}
+  server:
+    port: ${MANAGEMENT_SERVER_PORT:9999}
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+  username: sa
+  password:
+
+webclient:
+  auth:
+    isSecure: ${AUTH_SERVICE_IS_SECURE:true}
+    service: ${AUTH_SERVICE_NAME:auth-server}
+    checkTokenRoute: ${AUTH_SERVICE_CHECK_TOKEN_ROUTE:oauth/check_token}
+    serviceTokenRoute: ${AUTH_SERVICE_TOKEN_ROUTE:oauth/token}
+    basic:
+      username: ${SERVICE_CLIENT_ID:service}
+      password: ${SERVICE_CLIENT_SECRET:servicesecret}
+  pm:
+    isSecure: ${PROJECT_MANAGER_IS_SECURE:true}
+    service: ${PROJECT_MANAGER_SERVICE_NAME:project-manager}
+    internalProjectRoute: ${PROJECT_MANAGER_INTERNAL_PROJECT_ROUTE:api/internal/project}
+    internalNodesProjectRoute: ${PROJECT_MANAGER_INTERNAL_NODES_PROJECT_ROUTE:api/internal/nodes/project}
+    internalEventsProjectRoute: ${PROJECT_MANAGER_INTERNAL_EVENTS_PROJECT_ROUTE:api/internal/events/project}
+  jr:
+    isSecure: ${JOB_RUNNER_IS_SECURE:true}
+    service: ${JOB_RUNNER_SERVICE_NAME:job-runner}
+    internalSubmitRoute: ${JOB_RUNNER_INTERNAL_SUBMIT_ROUTE:api/internal/submit}
+  rc:
+    isSecure: ${REPORT_COMMUNICATOR_IS_SECURE:true}
+    service: ${REPORT_COMMUNICATOR_SERVICE_NAME:report-communicator}
+    reportsRoute: ${REPORT_COMMUNICATOR_REPORTS_ROUTE:api/reports}
+    reportsDefaultRoute: ${REPORT_COMMUNICATOR_REPORTS_DEFAULT_ROUTE:api/reports/default}
+  ds:
+    isSecure: ${DATA_SOURCE_IS_SECURE:true}
+    service: ${DATA_SOURCE_SERVICE_NAME:data-source}
+    route: ${DATA_SOURCE_ROUTE:api}
+  source-project-id: ${API_SOURCE_PROJECT_ID:40e54c23-a618-4e69-9d08-7d2f8a6176d4}
+  user-group-id: ${API_USER_GROUP_ID:f0c5951e-1d96-4fa5-a3ee-f0624e9206bf}
+  mlr:
+    scheme: ${MLR_CORE_SERVER_SCHEME:http}
+    host: ${MLR_CORE_SERVER_HOST:localhost}
+    port: ${MLR_CORE_SERVER_PORT:8080}
+    unstable-entities-route: ${MLR_UNSTABLE_ENTITIES_ROUTE:/api/unstable/entities}
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: frontend
+      client-secret: secret
+      url-namespace: ${SDS_GATEWAY_HOST:https://sds-api-gateway-ci02132621-edevlg-sdsdevelop5.apps.test-ose.sigma.webfluxExample.ru}

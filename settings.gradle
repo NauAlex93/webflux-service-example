@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        if (System.env.BUILD_ENVIRONMENT == "ALPHA") {
+            maven { url "http://sbtnexus.ca.webfluxExample.ru:8081/nexus/content/repositories/Atlassian_proxy" }
+            maven { url "http://sbtnexus.ca.webfluxExample.ru:8081/nexus/content/repositories/central" }
+        } else if (System.env.BUILD_ENVIRONMENT == "webfluxExampleCLOUD") {
+            maven { url "http://nexus0:8081/nexus/content/groups/maven-group/" }
+        } else {
+            maven { url "http://sbtatlas.sigma.webfluxExample.ru/nexus/content/repositories/gradle_plugins_proxy/" }
+        }
+    }
+}
+
+rootProject.name = 'sds-template-selector-service'

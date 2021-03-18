@@ -1,0 +1,38 @@
+ru/webfluxExample/ds/dto/CreateReportRequest.java
+ ru.webfluxExample.ds.dto.CreateReportRequest
+ru/webfluxExample/ds/config/SecurityContextRepository.java
+ ru.webfluxExample.ds.config.SecurityContextRepository
+ru/webfluxExample/ds/dto/CreateProjectRequest.java
+ ru.webfluxExample.ds.dto.CreateProjectRequest
+ru/webfluxExample/ds/service/UriProvider.java
+ ru.webfluxExample.ds.service.UriProvider
+ru/webfluxExample/ds/dto/ProjectDto.java
+ ru.webfluxExample.ds.dto.ProjectDto
+ru/webfluxExample/ds/dto/ProjectExecutionStatus.java
+ ru.webfluxExample.ds.dto.ProjectExecutionStatus
+ru/webfluxExample/ds/service/ProjectAutoValidationService.java
+ ru.webfluxExample.ds.service.ProjectAutoValidationService
+ru/webfluxExample/ds/dto/AccessToken.java
+ ru.webfluxExample.ds.dto.AccessToken
+ru/webfluxExample/ds/config/WebClientConfig.java
+ ru.webfluxExample.ds.config.WebClientConfig
+ru/webfluxExample/ds/dto/ProjectNodeStatus.java
+ ru.webfluxExample.ds.dto.ProjectNodeStatus
+ru/webfluxExample/ds/dto/Node.java
+ ru.webfluxExample.ds.dto.Node
+ru/webfluxExample/ds/config/WebServerConfig.java
+ ru.webfluxExample.ds.config.WebServerConfig
+ru/webfluxExample/ds/exceptions/BasicApiResponseException.java
+ ru.webfluxExample.ds.exceptions.BasicApiResponseException
+ru/webfluxExample/ds/config/AuthenticationManager.java
+ ru.webfluxExample.ds.config.AuthenticationManager
+ru/webfluxExample/ds/service/WebService.java
+ ru.webfluxExample.ds.service.WebService
+ru/webfluxExample/ds/rest/AutoValidationHandler.java
+ ru.webfluxExample.ds.rest.AutoValidationHandler
+ru/webfluxExample/ds/service/AccessTokenProvider.java
+ ru.webfluxExample.ds.service.AccessTokenProvider
+ru/webfluxExample/ds/TemplateSelectorServiceApplication.java
+ ru.webfluxExample.ds.TemplateSelectorServiceApplication
+ru/webfluxExample/ds/dto/ProjectRunStatus.java
+ ru.webfluxExample.ds.dto.ProjectRunStatus

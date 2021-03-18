@@ -1,0 +1,145 @@
+{
+  "id": "d87640f1-35b5-4af2-8667-ce515236862e",
+  "name": "Test",
+  "description": "saved as...",
+  "creationDate": "2020-03-14T14:08:30.462Z",
+  "updatedDate": null,
+  "type": "regular",
+  "mainTrafficLightNodeId": null,
+  "projectState": "active",
+  "author": "test",
+  "workflow": {
+    "links": [],
+    "nodes": [
+      {
+        "id": "90ac1293-6962-4a63-be28-4b0cd322affa",
+        "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+        "name": "Data Source",
+        "description": "Creates dataframe from selected database table",
+        "hash": "014af243abc123c8bfbdf3014028df8847cf5f61",
+        "state": "not_ready",
+        "x": -500,
+        "y": 400,
+        "selected": false,
+        "ports": [
+          {
+            "name": "port0",
+            "label": "Output dataframe",
+            "order": 1,
+            "in": false,
+            "type": "dataframe",
+            "required": true,
+            "transformedFrom": null,
+            "id": "c09eb1cc-dcd5-4854-8174-732838ac8187",
+            "parent": "90ac1293-6962-4a63-be28-4b0cd322affa",
+            "dynamic": false,
+            "trafficLightPort": false,
+            "description": "Dataframe based on selected table",
+            "shape": "shape_dataframe",
+            "trafficLightPort": false
+          }
+        ],
+        "metanodeProjectId": null,
+        "fake": false,
+        "locked": false,
+        "metaNode": false,
+        "shape": "data_source",
+        "metaNode": false
+      },
+      {
+        "id": "922c1293-6962-4a63-be28-4b0cd322affa",
+        "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+        "name": "Data Source 2",
+        "description": "Creates dataframe from selected database table 2",
+        "hash": "014af243abc123c8bfbdf3014028df8847cf5f61",
+        "state": "not_ready",
+        "x": -500,
+        "y": 400,
+        "selected": false,
+        "ports": [
+          {
+            "name": "port0",
+            "label": "Output dataframe",
+            "order": 1,
+            "in": false,
+            "type": "dataframe",
+            "required": true,
+            "transformedFrom": null,
+            "id": "c09eb1cc-dcd5-4854-8174-732838ac8187",
+            "parent": "90ac1293-6962-4a63-be28-4b0cd322affa",
+            "dynamic": false,
+            "trafficLightPort": false,
+            "description": "Dataframe based on selected table",
+            "shape": "shape_dataframe",
+            "trafficLightPort": false
+          }
+        ],
+        "metanodeProjectId": null,
+        "fake": false,
+        "locked": false,
+        "metaNode": false,
+        "shape": "data_source",
+        "metaNode": false
+      }
+    ],
+    "config": {
+      "scaleX": 0,
+      "scaleY": 0,
+      "offsetX": 400,
+      "offsetY": 10
+    },
+    "notes": [],
+    "metanodesProjectIds": []
+  },
+  "readOnly": false,
+  "workflowData": {
+    "workflow": {
+      "links": [],
+      "nodes": [
+        {
+          "id": "90ac1293-6962-4a63-be28-4b0cd322affa",
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "name": "Data Source",
+          "description": "Creates dataframe from selected database table",
+          "hash": "014af243abc123c8bfbdf3014028df8847cf5f61",
+          "state": "not_ready",
+          "x": -500,
+          "y": 400,
+          "selected": false,
+          "ports": [
+            {
+              "name": "port0",
+              "label": "Output dataframe",
+              "order": 1,
+              "in": false,
+              "type": "dataframe",
+              "required": true,
+              "transformedFrom": null,
+              "id": "c09eb1cc-dcd5-4854-8174-732838ac8187",
+              "parent": "90ac1293-6962-4a63-be28-4b0cd322affa",
+              "dynamic": false,
+              "trafficLightPort": false,
+              "description": "Dataframe based on selected table",
+              "shape": "shape_dataframe",
+              "trafficLightPort": false
+            }
+          ],
+          "metanodeProjectId": null,
+          "fake": false,
+          "locked": false,
+          "metaNode": false,
+          "shape": "data_source",
+          "metaNode": false
+        }
+      ],
+      "config": {
+        "scaleX": 0,
+        "scaleY": 0,
+        "offsetX": 400,
+        "offsetY": 10
+      },
+      "notes": [],
+      "metanodesProjectIds": []
+    }
+  }
+}

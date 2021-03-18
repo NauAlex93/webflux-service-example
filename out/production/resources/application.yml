@@ -1,0 +1,49 @@
+server:
+  port: 8089
+#  ssl:
+#    enabled: true
+#    key-store: ${SSL_KEYSTORE_PATH:/secret/sds-self-signed-store.jks}
+#    key-store-password: ${SSL_KEYSTORE_PASSWORD:epamtver2019}
+#    key-store-type: jks
+#    key-alias: ${SSL_KEYSTORE_KEY_ALIAS:self_local_sans}
+
+spring:
+  application:
+    name: sds-template-selector-service
+    zipkin:
+      enabled: ${ZIPKIN_ENABLED:true}
+      baseUrl: ${ZIPKIN_BASE_URL:http://zipkin0:9411}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${MANAGEMENT_WEB_EXPOSURE:*}
+#  server:
+#    port: ${MANAGEMENT_SERVER_PORT:9999}
+#    ssl:
+#      enabled: true
+#      key-store: ${SSL_KEYSTORE_PATH:/secret/sds-self-signed-store.jks}
+#      key-store-password: ${SSL_KEYSTORE_PASSWORD:epamtver2019}
+#      key-store-type: jks
+#      key-alias: ${SSL_KEYSTORE_KEY_ALIAS:self_local_sans}
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
+
+webclient:
+  auth:
+    route: ${AUTH_ROUTE:/auth-server/oauth/token}
+    basic:
+      username: ${SERVICE_CLIENT_ID:service}
+      password: ${SERVICE_CLIENT_SECRET:servicesecret}
+  token-info-route: /auth-server/oauth/check_token
+  server-scheme: https
+  server-host: ${API_GATEWAY_HOST:sds-api-gateway-ci02132621-edevlg-sdsdevelop5.apps.test-ose.sigma.webfluxExample.ru}
+  server-port: ${API_GATEWAY_PORT:-1}
+  project-manager-route: ${API_PROJECT_MANAGER_ROUTE:/project-manager/api/internal/project}
+  job-runner-submit-route: ${API_JOB_RUNNER_SUBMIT_ROUTE:/job-runner/api/internal/submit}
+  report-communicator-reports-route: ${API_REPORTS_ROUTE:/report-communicator/api/reports}
+  report-communicator-report-template-route: ${API_REPORT_TEMPLATE_ROUTE:/report-communicator/api/reports/default}
+  source-project-id: ${API_SOURCE_PROJECT_ID:40e54c23-a618-4e69-9d08-7d2f8a6176d4}
+  user-group-id: ${API_USER_GROUP_ID:f0c5951e-1d96-4fa5-a3ee-f0624e9206bf}
+  project-manager-nodes-info-route: ${API_PROJECT_MANAGER_NODES_INFO_ROUTE:/project-manager/api/internal/nodes/project}

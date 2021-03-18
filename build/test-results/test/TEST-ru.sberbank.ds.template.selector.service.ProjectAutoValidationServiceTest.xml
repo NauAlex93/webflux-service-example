@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-01-14T11:14:44" hostname="CAB-WSM-0010709" time="0.664">
+  <properties/>
+  <testcase name="shouldSuccessfullyCreateReportWithTemplate()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.243"/>
+  <testcase name="shouldFailOnGettingReport()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.031"/>
+  <testcase name="shouldFailOnCreatingProject()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.026"/>
+  <testcase name="shouldSuccessfullyStartProject()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.009"/>
+  <testcase name="shouldFailOnStartingProject()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.004"/>
+  <testcase name="shouldSuccessfullyGetReport()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.013"/>
+  <testcase name="shouldFailOnCreateReportWithTemplate()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.005"/>
+  <testcase name="shouldSuccessfullyCreateAndStartProject()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.004"/>
+  <testcase name="shouldSuccessfullyCreateProject()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.003"/>
+  <testcase name="shouldReceiveFailedStatus()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.301"/>
+  <testcase name="shouldReceiveInProgressStatus()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.005"/>
+  <testcase name="shouldSuccessfullyCreateAndGetReport()" classname="ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest" time="0.009"/>
+  <system-out><![CDATA[14:14:44.112 [Test worker] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+14:14:44.263 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling report communicator service to create report for project 865b280c-4aa5-46f1-9f5c-0cd8f241a0a3
+14:14:44.269 [Test worker] INFO Create report with template - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.272 [Test worker] INFO Create report with template - | request(unbounded)
+14:14:44.273 [Test worker] INFO Create report with template - | onNext(865b280c-4aa5-46f1-9f5c-0cd8f241a0a3)
+14:14:44.273 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Report successfully created 865b280c-4aa5-46f1-9f5c-0cd8f241a0a3
+14:14:44.273 [Test worker] INFO Create report with template - | onComplete()
+14:14:44.284 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling report communicator to get report with id 7240a0d6-2be4-4f80-8a61-d44b9d855656
+14:14:44.291 [Test worker] INFO Get report - | onSubscribe([Fuseable] Operators.EmptySubscription)
+14:14:44.291 [Test worker] INFO Get report - | request(unbounded)
+14:14:44.291 [Test worker] ERROR Get report - | onError(BasicApiResponseException {
+responseBody= Got exception while getting report
+httpStatus= 502 BAD_GATEWAY
+})
+14:14:44.304 [Test worker] ERROR Get report - 
+ru.webfluxExample.ds.template.selector.exceptions.BasicApiResponseException: null
+	at ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest.shouldFailOnGettingReport(ProjectAutoValidationServiceTest.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+14:14:44.314 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling project manager service to create project ProjectDto(name=[AutoValidation] #1 From project a6abbcd6-13e2-4742-acc0-e8d33e9d8d22, description=, sourceId=a6abbcd6-13e2-4742-acc0-e8d33e9d8d22, readOnly=false, groupShared=false, copyReports=false) and userGroupId 4797d912-ede1-4d79-9944-395fd9642920
+14:14:44.333 [Test worker] INFO Create project - | onSubscribe([Fuseable] Operators.EmptySubscription)
+14:14:44.333 [Test worker] INFO Create project - | request(unbounded)
+14:14:44.333 [Test worker] ERROR Create project - | onError(BasicApiResponseException {
+responseBody= Got exception while creating project
+httpStatus= 502 BAD_GATEWAY
+})
+14:14:44.334 [Test worker] ERROR Create project - 
+ru.webfluxExample.ds.template.selector.exceptions.BasicApiResponseException: null
+	at ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest.shouldFailOnCreatingProject(ProjectAutoValidationServiceTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+14:14:44.345 [Test worker] INFO Start project - | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+14:14:44.345 [Test worker] INFO Start project - | request(unbounded)
+14:14:44.347 [Test worker] INFO reactor.Mono.Just.4 - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.347 [Test worker] INFO reactor.Mono.Just.4 - | request(unbounded)
+14:14:44.347 [Test worker] INFO reactor.Mono.Just.4 - | onNext(accessToken)
+14:14:44.347 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling job runner service to start project 039be1dc-a4af-4c1c-8e7b-1d6144d2fa58
+14:14:44.347 [Test worker] INFO Start project - | onComplete()
+14:14:44.347 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Project 039be1dc-a4af-4c1c-8e7b-1d6144d2fa58 successfully started
+14:14:44.347 [Test worker] INFO reactor.Mono.Just.4 - | onComplete()
+14:14:44.351 [Test worker] INFO Start project - | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+14:14:44.352 [Test worker] INFO Start project - | request(unbounded)
+14:14:44.352 [Test worker] INFO reactor.Mono.Just.6 - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.352 [Test worker] INFO reactor.Mono.Just.6 - | request(unbounded)
+14:14:44.352 [Test worker] INFO reactor.Mono.Just.6 - | onNext(accessToken)
+14:14:44.352 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling job runner service to start project d908510d-b256-437e-8ce5-13d17d4c8ef1
+14:14:44.352 [Test worker] INFO Start project - | onComplete()
+14:14:44.352 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Project d908510d-b256-437e-8ce5-13d17d4c8ef1 successfully started
+14:14:44.352 [Test worker] INFO reactor.Mono.Just.6 - | onComplete()
+14:14:44.362 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling report communicator to get report with id 1069940c-f120-4236-8744-6c81398f2c9b
+14:14:44.362 [Test worker] INFO Get report - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.362 [Test worker] INFO Get report - | request(unbounded)
+14:14:44.362 [Test worker] INFO Get report - | onNext({
+  "id": "24f767db-ae8c-4d31-bc8a-5316aa720633",
+  "name": "testReport",
+  "description": "testReport",
+  "rootProjectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "projectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "reportTemplateId": "a027c8ee-054d-40a0-99a0-86cfd8ed70fd",
+  "reportTemplateVersion": 1,
+  "body": {
+    "@type": "group",
+    "id": "e3fc8301-3a0b-11eb-aa6c-a3326e4d9df2",
+    "order": 0,
+    "topComment": "",
+    "bottomComment": "",
+    "disabled": false,
+    "elements": [
+      {
+        "@type": "node",
+        "id": "e3fc8300-3a0b-11eb-aa6c-a3326e4d9df2",
+        "order": 0,
+        "topComment": "",
+        "bottomComment": "",
+        "disabled": false,
+        "nodeId": "18ffa248-3eaf-44e3-aa99-1c471ac42a3c",
+        "data": {
+          "locked": false,
+          "metaOutputJson": {
+            "ports": [
+              {
+                "name": "port0",
+                "output": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "result": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "type": "dataframe"
+              }
+            ]
+          },
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "scriptArgs": "{scriptArgs}",
+          "settingsJson": "{settingsJson}",
+          "status": "done"
+        }
+      }
+    ]
+  },
+  "state": "draft"
+})
+14:14:44.365 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Report received {
+  "id": "24f767db-ae8c-4d31-bc8a-5316aa720633",
+  "name": "testReport",
+  "description": "testReport",
+  "rootProjectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "projectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "reportTemplateId": "a027c8ee-054d-40a0-99a0-86cfd8ed70fd",
+  "reportTemplateVersion": 1,
+  "body": {
+    "@type": "group",
+    "id": "e3fc8301-3a0b-11eb-aa6c-a3326e4d9df2",
+    "order": 0,
+    "topComment": "",
+    "bottomComment": "",
+    "disabled": false,
+    "elements": [
+      {
+        "@type": "node",
+        "id": "e3fc8300-3a0b-11eb-aa6c-a3326e4d9df2",
+        "order": 0,
+        "topComment": "",
+        "bottomComment": "",
+        "disabled": false,
+        "nodeId": "18ffa248-3eaf-44e3-aa99-1c471ac42a3c",
+        "data": {
+          "locked": false,
+          "metaOutputJson": {
+            "ports": [
+              {
+                "name": "port0",
+                "output": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "result": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "type": "dataframe"
+              }
+            ]
+          },
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "scriptArgs": "{scriptArgs}",
+          "settingsJson": "{settingsJson}",
+          "status": "done"
+        }
+      }
+    ]
+  },
+  "state": "draft"
+}
+14:14:44.366 [Test worker] INFO Get report - | onComplete()
+14:14:44.369 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling report communicator service to create report for project 02b6f56b-982f-42b6-853d-0ab8411d3f12
+14:14:44.370 [Test worker] INFO Create report with template - | onSubscribe([Fuseable] Operators.EmptySubscription)
+14:14:44.370 [Test worker] INFO Create report with template - | request(unbounded)
+14:14:44.370 [Test worker] ERROR Create report with template - | onError(BasicApiResponseException {
+responseBody= Got exception while creating report
+httpStatus= 502 BAD_GATEWAY
+})
+14:14:44.370 [Test worker] ERROR Create report with template - 
+ru.webfluxExample.ds.template.selector.exceptions.BasicApiResponseException: null
+	at ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest.shouldFailOnCreateReportWithTemplate(ProjectAutoValidationServiceTest.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+14:14:44.376 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Creating new project ProjectDto(name=[AutoValidation] #1 From project ec61e63b-612a-492b-90c9-cb4babc6dda9, description=, sourceId=ec61e63b-612a-492b-90c9-cb4babc6dda9, readOnly=false, groupShared=false, copyReports=false) with userGroupId c8b8f8be-dbeb-45b0-87cd-0aceacc2cf69
+14:14:44.377 [Test worker] INFO Create and start project - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.377 [Test worker] INFO Create and start project - | request(unbounded)
+14:14:44.377 [Test worker] INFO Create and start project - | onNext(ec61e63b-612a-492b-90c9-cb4babc6dda9)
+14:14:44.378 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Successfully created created and started project with UUID ec61e63b-612a-492b-90c9-cb4babc6dda9
+14:14:44.378 [Test worker] INFO Create and start project - | onComplete()
+14:14:44.381 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling project manager service to create project ProjectDto(name=[AutoValidation] #1 From project 0bde1dfd-e36d-45ce-8b5d-9a6a6328a03e, description=, sourceId=0bde1dfd-e36d-45ce-8b5d-9a6a6328a03e, readOnly=false, groupShared=false, copyReports=false) and userGroupId 280bb0b7-c6d7-4456-a43a-06493e759630
+14:14:44.381 [Test worker] INFO Create project - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.381 [Test worker] INFO Create project - | request(unbounded)
+14:14:44.382 [Test worker] INFO Create project - | onNext(0bde1dfd-e36d-45ce-8b5d-9a6a6328a03e)
+14:14:44.382 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Successfully created project with uuid 0bde1dfd-e36d-45ce-8b5d-9a6a6328a03e
+14:14:44.382 [Test worker] INFO Create project - | onComplete()
+14:14:44.681 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling project manager to get project status 483f76e8-5b9d-4cc0-a30a-cc39ddc6d190
+14:14:44.683 [Test worker] INFO Get project status - | onSubscribe([Fuseable] FluxMapFuseable.MapFuseableConditionalSubscriber)
+14:14:44.683 [Test worker] INFO Get project status - | request(unbounded)
+14:14:44.683 [Test worker] INFO Get project status - | onNext(ProjectRunStatus(projectId=483f76e8-5b9d-4cc0-a30a-cc39ddc6d190, projectExecutionStatus=FAILED, nodes=[Node(nodeId=df594df6-85d2-45b4-99ee-a6aee7eec174, projectNodeStatus=DONE), Node(nodeId=5068fa5f-06a6-4e35-86a7-df90f2571d8b, projectNodeStatus=FAILED), Node(nodeId=d38d628d-cf41-4f81-a2de-31bded2b10ff, projectNodeStatus=FAILED)]))
+14:14:44.683 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Successfully received project status ProjectRunStatus(projectId=483f76e8-5b9d-4cc0-a30a-cc39ddc6d190, projectExecutionStatus=FAILED, nodes=[Node(nodeId=df594df6-85d2-45b4-99ee-a6aee7eec174, projectNodeStatus=DONE), Node(nodeId=5068fa5f-06a6-4e35-86a7-df90f2571d8b, projectNodeStatus=FAILED), Node(nodeId=d38d628d-cf41-4f81-a2de-31bded2b10ff, projectNodeStatus=FAILED)])
+14:14:44.683 [Test worker] INFO Get project status - | onComplete()
+14:14:44.689 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling project manager to get project status 05dac37a-33be-4f41-a044-f257fd4f64db
+14:14:44.689 [Test worker] INFO Get project status - | onSubscribe([Fuseable] FluxMapFuseable.MapFuseableConditionalSubscriber)
+14:14:44.689 [Test worker] INFO Get project status - | request(unbounded)
+14:14:44.689 [Test worker] INFO Get project status - | onNext(ProjectRunStatus(projectId=05dac37a-33be-4f41-a044-f257fd4f64db, projectExecutionStatus=IN_PROGRESS, nodes=[Node(nodeId=df594df6-85d2-45b4-99ee-a6aee7eec174, projectNodeStatus=DONE), Node(nodeId=5068fa5f-06a6-4e35-86a7-df90f2571d8b, projectNodeStatus=DONE), Node(nodeId=d38d628d-cf41-4f81-a2de-31bded2b10ff, projectNodeStatus=NOT_READY)]))
+14:14:44.689 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Successfully received project status ProjectRunStatus(projectId=05dac37a-33be-4f41-a044-f257fd4f64db, projectExecutionStatus=IN_PROGRESS, nodes=[Node(nodeId=df594df6-85d2-45b4-99ee-a6aee7eec174, projectNodeStatus=DONE), Node(nodeId=5068fa5f-06a6-4e35-86a7-df90f2571d8b, projectNodeStatus=DONE), Node(nodeId=d38d628d-cf41-4f81-a2de-31bded2b10ff, projectNodeStatus=NOT_READY)])
+14:14:44.690 [Test worker] INFO Get project status - | onComplete()
+14:14:44.694 [Test worker] INFO Create and get report - | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+14:14:44.694 [Test worker] INFO Create and get report - | request(unbounded)
+14:14:44.694 [Test worker] INFO reactor.Mono.Just.14 - | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+14:14:44.694 [Test worker] INFO reactor.Mono.Just.14 - | request(unbounded)
+14:14:44.694 [Test worker] INFO reactor.Mono.Just.14 - | onNext(accessToken)
+14:14:44.694 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Calling report communicator to create report for project 9cff06e9-2ee3-480b-bd65-8781fdc902e7 and clientId service
+14:14:44.695 [Test worker] INFO Create and get report - | onNext({
+  "id": "24f767db-ae8c-4d31-bc8a-5316aa720633",
+  "name": "testReport",
+  "description": "testReport",
+  "rootProjectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "projectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "reportTemplateId": "a027c8ee-054d-40a0-99a0-86cfd8ed70fd",
+  "reportTemplateVersion": 1,
+  "body": {
+    "@type": "group",
+    "id": "e3fc8301-3a0b-11eb-aa6c-a3326e4d9df2",
+    "order": 0,
+    "topComment": "",
+    "bottomComment": "",
+    "disabled": false,
+    "elements": [
+      {
+        "@type": "node",
+        "id": "e3fc8300-3a0b-11eb-aa6c-a3326e4d9df2",
+        "order": 0,
+        "topComment": "",
+        "bottomComment": "",
+        "disabled": false,
+        "nodeId": "18ffa248-3eaf-44e3-aa99-1c471ac42a3c",
+        "data": {
+          "locked": false,
+          "metaOutputJson": {
+            "ports": [
+              {
+                "name": "port0",
+                "output": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "result": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "type": "dataframe"
+              }
+            ]
+          },
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "scriptArgs": "{scriptArgs}",
+          "settingsJson": "{settingsJson}",
+          "status": "done"
+        }
+      }
+    ]
+  },
+  "state": "draft"
+})
+14:14:44.697 [Test worker] INFO ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationService - Successfully received report {
+  "id": "24f767db-ae8c-4d31-bc8a-5316aa720633",
+  "name": "testReport",
+  "description": "testReport",
+  "rootProjectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "projectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "reportTemplateId": "a027c8ee-054d-40a0-99a0-86cfd8ed70fd",
+  "reportTemplateVersion": 1,
+  "body": {
+    "@type": "group",
+    "id": "e3fc8301-3a0b-11eb-aa6c-a3326e4d9df2",
+    "order": 0,
+    "topComment": "",
+    "bottomComment": "",
+    "disabled": false,
+    "elements": [
+      {
+        "@type": "node",
+        "id": "e3fc8300-3a0b-11eb-aa6c-a3326e4d9df2",
+        "order": 0,
+        "topComment": "",
+        "bottomComment": "",
+        "disabled": false,
+        "nodeId": "18ffa248-3eaf-44e3-aa99-1c471ac42a3c",
+        "data": {
+          "locked": false,
+          "metaOutputJson": {
+            "ports": [
+              {
+                "name": "port0",
+                "output": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "result": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "type": "dataframe"
+              }
+            ]
+          },
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "scriptArgs": "{scriptArgs}",
+          "settingsJson": "{settingsJson}",
+          "status": "done"
+        }
+      }
+    ]
+  },
+  "state": "draft"
+}
+14:14:44.699 [Test worker] INFO Create and get report - | onComplete()
+14:14:44.699 [Test worker] INFO reactor.Mono.Just.14 - | onComplete()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

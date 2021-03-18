@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sds-template-selector-service
+
+webclient:
+  auth:
+    route: /auth-server/oauth/token
+    basic:
+      username: service
+      password: servicesecret
+  token-info-route: /auth-server/oauth/check_token
+  server-scheme: http
+  server-host: localhost
+  server-port: 8080
+  project-manager-route: /project-manager/api/project
+  job-runner-submit-route: /job-runner/api/submit
+  report-communicator-reports-route: /report-communicator/api/reports
+  report-communicator-report-template-route: /report-communicator/api/reports/template
+  source-project-id: 00000000-0000-0000-0000-000000000001
+  user-group-id: 00000000-0000-0000-0000-000000000002
+  project-manager-nodes-info-route: /project-manager/api/internal/nodes/project

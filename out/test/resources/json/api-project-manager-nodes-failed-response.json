@@ -1,0 +1,226 @@
+[
+  {
+    "id": "df594df6-85d2-45b4-99ee-a6aee7eec174",
+    "projectId": "a2aa13b7-529e-4f7c-9482-d000d8daf018",
+    "moduleId": "6cd264d3-0f3f-4eb6-bc09-5891d7bc8248",
+    "settingsJson": "{\"columns\":[{\"dataFrameColumnName\":\"passengerid\",\"tableColumnName\":\"passengerid\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"survived\",\"tableColumnName\":\"survived\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"pclass\",\"tableColumnName\":\"pclass\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"name\",\"tableColumnName\":\"name\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"sex\",\"tableColumnName\":\"sex\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"age\",\"tableColumnName\":\"age\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"sibsp\",\"tableColumnName\":\"sibsp\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"parch\",\"tableColumnName\":\"parch\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"ticket\",\"tableColumnName\":\"ticket\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"fare\",\"tableColumnName\":\"fare\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"cabin\",\"tableColumnName\":\"cabin\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"embarked\",\"tableColumnName\":\"embarked\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"}],\"connectionTitle\":\"[HIVE2] hive-chd0037-connection1\",\"saveMode\":\"create\",\"tableNamePrefix\":\"tttt\",\"connectionId\":\"5a3a8e41-03cc-4527-8fbd-7460ab80ccab\",\"schemaName\":\"sdsdh_validationmanag\"}",
+    "metaOutputJson": {
+      "ports": []
+    },
+    "scriptArgs": "{\"port0\":{\"mode\":\"csv\",\"hdfsPath\":\"/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop2/e65e6d16-086c-4fff-a176-74b1413bf870/08e3e637-b748-4a8e-9140-11f250916595/data/output/port0\",\"connectionId\":null,\"clouderaUsername\":null,\"databaseName\":null,\"schemaName\":null,\"tableName\":null,\"sql\":null,\"source\":\"hdfs\",\"separator\":null,\"columnDelimiter\":\",\",\"rowDelimiter\":null,\"encoding\":\"utf-8\",\"firstRowAsHeader\":false,\"firstColumnAsIndex\":false,\"columns\":[{\"columnName\":\"passengerid\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"survived\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"pclass\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"name\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sex\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"age\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sibsp\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"parch\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"ticket\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"fare\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"cabin\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"embarked\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null}],\"totalRows\":null},\"saveMode\":\"create\",\"connectionTitle\":\"[HIVE2] hive-chd0037-connection1\",\"columns\":[{\"dataFrameColumnName\":\"passengerid\",\"tableColumnName\":\"passengerid\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"survived\",\"tableColumnName\":\"survived\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"pclass\",\"tableColumnName\":\"pclass\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"name\",\"tableColumnName\":\"name\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"sex\",\"tableColumnName\":\"sex\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"age\",\"tableColumnName\":\"age\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"sibsp\",\"tableColumnName\":\"sibsp\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"parch\",\"tableColumnName\":\"parch\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"ticket\",\"tableColumnName\":\"ticket\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"fare\",\"tableColumnName\":\"fare\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"cabin\",\"tableColumnName\":\"cabin\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"},{\"dataFrameColumnName\":\"embarked\",\"tableColumnName\":\"embarked\",\"tableColumnType\":\"VARCHAR\",\"checked\":true,\"tableColumnFormat\":\"255\"}],\"connectionId\":\"5a3a8e41-03cc-4527-8fbd-7460ab80ccab\",\"tableNamePrefix\":\"tttt\",\"schemaName\":\"sdsdh_validationmanag\"}",
+    "status": "done",
+    "executionId": null,
+    "locked": false
+  },
+  {
+    "id": "5068fa5f-06a6-4e35-86a7-df90f2571d8b",
+    "projectId": "a2aa13b7-529e-4f7c-9482-d000d8daf018",
+    "moduleId": "640c4c10-a0b1-493d-8490-8c039f215cb4",
+    "settingsJson": "{\"metanode\":false,\"isReadOnly\":false,\"isReady\":true,\"isReportNode\":false,\"selectedTableUrl\":null,\"connectionName\":null,\"columns\":[{\"columnName\":\"passengerid\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Excluded\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"survived\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Target\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"pclass\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Excluded\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"name\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Predicted Class\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"sex\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"age\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"sibsp\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Excluded\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"parch\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"ticket\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"fare\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"cabin\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Excluded\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"},{\"columnName\":\"embarked\",\"checked\":true,\"type\":\"Nominal\",\"role\":\"Input\",\"tableColumnName\":null,\"tableColumnType\":null,\"tableColumnFormat\":null,\"originalType\":\"Nominal\"}],\"source\":\"hdfs\",\"connectionUri\":null,\"tableName\":null,\"hdfsPath\":\"/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop2/e65e6d16-086c-4fff-a176-74b1413bf870/08e3e637-b748-4a8e-9140-11f250916595/data/output/port0\",\"clouderaUsername\":null,\"mode\":\"csv\",\"databaseName\":null,\"encoding\":\"utf-8\",\"columnDelimiter\":\",\",\"firstRowAsHeader\":false,\"firstColumnAsIndex\":false,\"separator\":null,\"connectionId\":null,\"errorMessage\":\"\"}",
+    "metaOutputJson": {
+      "ports": [
+        {
+          "name": "port1",
+          "type": "dataframe",
+          "output": {
+            "mode": "csv",
+            "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop2/e65e6d16-086c-4fff-a176-74b1413bf870/08e3e637-b748-4a8e-9140-11f250916595/data/output/port0",
+            "connectionId": null,
+            "clouderaUsername": null,
+            "databaseName": null,
+            "schemaName": null,
+            "tableName": null,
+            "sql": null,
+            "source": "hdfs",
+            "separator": null,
+            "columnDelimiter": ",",
+            "rowDelimiter": null,
+            "encoding": "utf-8",
+            "firstRowAsHeader": false,
+            "firstColumnAsIndex": false,
+            "columns": [
+              {
+                "columnName": "passengerid",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "survived",
+                "role": "Target",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "pclass",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "name",
+                "role": "Predicted Class",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "sex",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "age",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "sibsp",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "parch",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "ticket",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "fare",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "cabin",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "embarked",
+                "role": "Input",
+                "type": "Nominal",
+                "statistics": null
+              }
+            ],
+            "totalRows": null
+          }
+        }
+      ]
+    },
+    "scriptArgs": "{}",
+    "status": "failed",
+    "executionId": null,
+    "locked": false
+  },
+  {
+    "id": "d38d628d-cf41-4f81-a2de-31bded2b10ff",
+    "projectId": "a2aa13b7-529e-4f7c-9482-d000d8daf018",
+    "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+    "settingsJson": "{\"mode\":\"\",\"hdfsPath\":\"\",\"connectionId\":\"0c4c1553-83c4-487d-ab29-3c561c0502ea\",\"clouderaUsername\":\"\",\"databaseName\":\"\",\"schemaName\":\"sdsdh_validationmanag\",\"tableName\":\"10_2020_08_31_112302\",\"sql\":null,\"source\":\"hive2\",\"separator\":\",\",\"columnDelimiter\":\",\",\"rowDelimiter\":\"\",\"encoding\":\"\",\"firstRowAsHeader\":false,\"firstColumnAsIndex\":false,\"columns\":[{\"columnName\":\"passengerid\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"survived\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"pclass\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"name\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sex\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"age\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sibsp\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"parch\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"ticket\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"fare\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"cabin\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"embarked\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null}],\"totalRows\":null,\"selectedConnectionId\":\"0c4c1553-83c4-487d-ab29-3c561c0502ea\",\"selectedTableName\":\"10_2020_08_31_112302\",\"selectedSchemaName\":\"sdsdh_validationmanag\",\"selectedTableKey\":\"global(test)>sdsdh_validationmanag>10_2020_08_31_112302\",\"connectionTitle\":\"[HIVE2] test\",\"activeTabKey\":\"Database\"}",
+    "metaOutputJson": {
+      "ports": [
+        {
+          "name": "port0",
+          "type": "dataframe",
+          "output": {
+            "mode": "csv",
+            "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop2/e65e6d16-086c-4fff-a176-74b1413bf870/08e3e637-b748-4a8e-9140-11f250916595/data/output/port0",
+            "source": "hdfs",
+            "columnDelimiter": ",",
+            "encoding": "utf-8",
+            "firstRowAsHeader": false,
+            "firstColumnAsIndex": false,
+            "columns": [
+              {
+                "columnName": "passengerid",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "survived",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "pclass",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "name",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "sex",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "age",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "sibsp",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "parch",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "ticket",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "fare",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "cabin",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              },
+              {
+                "columnName": "embarked",
+                "role": "Excluded",
+                "type": "Nominal",
+                "statistics": null
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "scriptArgs": "{\"rowDelimiter\":\"\",\"databaseName\":\"\",\"connectionTitle\":\"[HIVE2] test\",\"activeTabKey\":\"Database\",\"columns\":[{\"columnName\":\"passengerid\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"survived\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"pclass\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"name\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sex\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"age\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"sibsp\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"parch\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"ticket\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"fare\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"cabin\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null},{\"columnName\":\"embarked\",\"role\":\"Excluded\",\"type\":\"Nominal\",\"statistics\":null}],\"firstColumnAsIndex\":false,\"source\":\"hive2\",\"totalRows\":null,\"schemaName\":\"sdsdh_validationmanag\",\"encoding\":\"\",\"separator\":\",\",\"selectedSchemaName\":\"sdsdh_validationmanag\",\"tableName\":\"10_2020_08_31_112302\",\"sql\":null,\"mode\":\"\",\"selectedTableKey\":\"global(test)>sdsdh_validationmanag>10_2020_08_31_112302\",\"selectedTableName\":\"10_2020_08_31_112302\",\"connectionId\":\"0c4c1553-83c4-487d-ab29-3c561c0502ea\",\"hdfsPath\":\"\",\"clouderaUsername\":\"\",\"firstRowAsHeader\":false,\"columnDelimiter\":\",\",\"selectedConnectionId\":\"0c4c1553-83c4-487d-ab29-3c561c0502ea\"}",
+    "status": "failed",
+    "executionId": null,
+    "locked": false
+  }
+]

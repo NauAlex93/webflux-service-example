@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="ru.webfluxExample.ds" status="WARN">
+
+  <Properties>
+    <Property name="DEFAULT_LOG_PATTERN">[%d{ISO8601}] - %r %p [%t] --- %c: %m%n</Property>
+    <Property name="SDS_LOG_PATTERN">[%d{ISO8601}] - %r %p [%t] --- %X{userName} - %X{ip} --- %c: %m%n</Property>
+    <Property name="PATTERN_SELECTOR_SCRIPT"><![CDATA[
+                  patternMatchKey=null;
+                  if (logEvent.getLevel() == org.apache.logging.log4j.Level.ERROR &&
+                      logEvent.getThrown() != null &&
+                      logEvent.getThrown().getMessage() == "Broken pipe") {
+                    patternMatchKey = "ExcludeStackTrace";
+                  }
+                  patternMatchKey;
+                  ]]>
+    </Property>
+  </Properties>
+
+  <Appenders>
+
+    <Console name="Console" target="SYSTEM_OUT" class="ch.qos.logback.classic.AsyncAppender">
+      <PatternLayout>
+        <ScriptPatternSelector defaultPattern="${DEFAULT_LOG_PATTERN}">
+          <Script name="DefaultPatternSelector" language="javascript">${PATTERN_SELECTOR_SCRIPT}</Script>
+          <PatternMatch key="ExcludeStackTrace"
+            pattern="${DEFAULT_LOG_PATTERN}%throwable{1}%n"/>
+        </ScriptPatternSelector>
+      </PatternLayout>
+    </Console>
+
+    <Console name="SDS_Console" target="SYSTEM_OUT" class="ch.qos.logback.classic.AsyncAppender">
+      <PatternLayout>
+        <ScriptPatternSelector defaultPattern="${SDS_LOG_PATTERN}">
+          <Script name="SdsPatternSelector" language="javascript">${PATTERN_SELECTOR_SCRIPT}</Script>
+          <PatternMatch key="ExcludeStackTrace"
+            pattern="${SDS_LOG_PATTERN}%throwable{1}%n"/>
+        </ScriptPatternSelector>
+      </PatternLayout>
+    </Console>
+
+  </Appenders>
+
+  <Loggers>
+
+    <Logger name="ru.webfluxExample.ds" level="info" additivity="false">
+      <AppenderRef ref="SDS_Console"/>
+    </Logger>
+
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+    </Root>
+
+  </Loggers>
+
+</Configuration>

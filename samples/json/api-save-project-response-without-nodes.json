@@ -1,0 +1,38 @@
+{
+  "id": "d87640f1-35b5-4af2-8667-ce515236862e",
+  "name": "Test",
+  "description": "saved as...",
+  "creationDate": "2020-03-14T14:08:30.462Z",
+  "updatedDate": null,
+  "type": "regular",
+  "mainTrafficLightNodeId": null,
+  "projectState": "active",
+  "author": "test",
+  "workflow": {
+    "links": [],
+    "nodes": [],
+    "config": {
+      "scaleX": 0,
+      "scaleY": 0,
+      "offsetX": 400,
+      "offsetY": 10
+    },
+    "notes": [],
+    "metanodesProjectIds": []
+  },
+  "readOnly": false,
+  "workflowData": {
+    "workflow": {
+      "links": [],
+      "nodes": [],
+      "config": {
+        "scaleX": 0,
+        "scaleY": 0,
+        "offsetX": 400,
+        "offsetY": 10
+      },
+      "notes": [],
+      "metanodesProjectIds": []
+    }
+  }
+}

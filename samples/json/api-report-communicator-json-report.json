@@ -1,0 +1,96 @@
+{
+  "id": "24f767db-ae8c-4d31-bc8a-5316aa720633",
+  "name": "testReport",
+  "description": "testReport",
+  "rootProjectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "projectId": "ef19829f-2e92-46fe-9bb8-0a580464ed62",
+  "reportTemplateId": "a027c8ee-054d-40a0-99a0-86cfd8ed70fd",
+  "reportTemplateVersion": 1,
+  "body": {
+    "@type": "group",
+    "id": "e3fc8301-3a0b-11eb-aa6c-a3326e4d9df2",
+    "order": 0,
+    "topComment": "",
+    "bottomComment": "",
+    "disabled": false,
+    "elements": [
+      {
+        "@type": "node",
+        "id": "e3fc8300-3a0b-11eb-aa6c-a3326e4d9df2",
+        "order": 0,
+        "topComment": "",
+        "bottomComment": "",
+        "disabled": false,
+        "nodeId": "18ffa248-3eaf-44e3-aa99-1c471ac42a3c",
+        "data": {
+          "locked": false,
+          "metaOutputJson": {
+            "ports": [
+              {
+                "name": "port0",
+                "output": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "result": {
+                  "columnDelimiter": ";",
+                  "columns": [
+                    {
+                      "columnName": "REQUEST_DATE",
+                      "role": "Excluded",
+                      "type": "Nominal"
+                    },
+                    {
+                      "columnName": "rating_old",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    },
+                    {
+                      "columnName": "id",
+                      "role": "Excluded",
+                      "type": "Interval"
+                    }
+                  ],
+                  "encoding": "utf-8",
+                  "firstColumnAsIndex": false,
+                  "firstRowAsHeader": true,
+                  "hdfsPath": "/data/core/shsdh/app/tmp/ci02132621-edevlg-sdsdevelop12/ef19829f-2e92-46fe-9bb8-0a580464ed62/18ffa248-3eaf-44e3-aa99-1c471ac42a3c/data/output/port0/dataset.csv",
+                  "mode": "csv",
+                  "source": "hdfs"
+                },
+                "type": "dataframe"
+              }
+            ]
+          },
+          "moduleId": "47da5547-dd54-4456-92eb-e254c2181f54",
+          "scriptArgs": "{scriptArgs}",
+          "settingsJson": "{settingsJson}",
+          "status": "done"
+        }
+      }
+    ]
+  },
+  "state": "draft"
+}

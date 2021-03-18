@@ -1,0 +1,14 @@
+ru/webfluxExample/ds/template/selector/util/FileUtils.java
+ ru.webfluxExample.ds.template.selector.util.FileUtils
+ru/webfluxExample/ds/template/selector/service/SdsAccessTokenProviderTest.java
+ ru.webfluxExample.ds.template.selector.service.SdsAccessTokenProviderTest
+ru/webfluxExample/ds/template/selector/rest/AutoValidationHandlerTest.java
+ ru.webfluxExample.ds.template.selector.rest.AutoValidationHandlerTest
+ru/webfluxExample/ds/template/selector/MlrSdsIntegrationTestContextLoad.java
+ ru.webfluxExample.ds.template.selector.MlrSdsIntegrationTestContextLoad
+ru/webfluxExample/ds/template/selector/service/ProjectAutoValidationServiceTest.java
+ ru.webfluxExample.ds.template.selector.service.ProjectAutoValidationServiceTest
+ru/webfluxExample/ds/template/selector/service/SdsUriProviderTest.java
+ ru.webfluxExample.ds.template.selector.service.SdsUriProviderTest
+ru/webfluxExample/ds/template/selector/service/SdsWebServiceTest.java
+ ru.webfluxExample.ds.template.selector.service.SdsWebServiceTest

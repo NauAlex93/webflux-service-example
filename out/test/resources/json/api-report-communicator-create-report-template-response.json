@@ -1,0 +1,11 @@
+{
+  "id":"60414205-f722-4442-b72f-041d514f27f7",
+  "name":"report",
+  "description":"text",
+  "rootProjectId":"79c2ef3f-a689-4823-88f1-24bbe4eaedc5",
+  "projectId":"79c2ef3f-a689-4823-88f1-24bbe4eaedc5",
+  "reportTemplateId":"eb45a6c0-5cbe-41d0-88d3-2eca7bd213dc",
+  "reportTemplateVersion":1,
+  "state":"scheduled",
+  "disabled":true
+}

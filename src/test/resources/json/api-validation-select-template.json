@@ -1,0 +1,16 @@
+{
+  "MODEL_ID": 12345,
+  "DATA_PARAMS_DATA_TYPE": "Структурированные данные",
+  "DATA_PARAMS_TASK_TYPE": "Бинарная классификация",
+  "DEV_NEEDS_NO_KEY_METRICS": false,
+  "METRICS_NAME": "Gini",
+  "SAMPLE": {
+    "FOR_DEVELOPMENT": ["Train"],
+    "FOR_VALIDATION": ["Out-of-Sample"]
+  },
+  "MLR_REQUIRED_PARAMS": {
+    "MODEL_ID": 2222,
+    "CDS_BLOCK": "10148647",
+    "DEVELOPMENT_BLOCK": "10148647"
+  }
+}

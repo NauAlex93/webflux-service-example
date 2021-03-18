@@ -1,0 +1,120 @@
+server:
+  port: 8089
+  ssl:
+    enabled: true
+    key-store: ${SSL_KEYSTORE_PATH:/secret/sds-self-signed-store.jks}
+    key-store-password: ${SSL_KEYSTORE_PASSWORD:epamtver2019}
+    key-store-type: jks
+    key-alias: ${SSL_KEYSTORE_KEY_ALIAS:self_local_sans}
+
+spring:
+  application:
+    name: sds-template-selector-service
+  zipkin:
+    enabled: ${ZIPKIN_ENABLED:true}
+    baseUrl: ${ZIPKIN_BASE_URL:http://zipkin0:9411}
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${POSTGRESQL_HOST:localhost}:${POSTGRESQL_PORT:5432}/${POSTGRESQL_DB:template_selector}?currentSchema=${POSTGRESQL_SCHEMA:template_selector}&ApplicationName=${POSTGRESQL_CONNECTION_NAME:template_selector}
+    username: ${POSTGRESQL_USER:template_selector}
+    password: ${POSTGRESQL_PASSWORD:123}
+    hikari:
+      connection-timeout: ${POSTGRESQL_CONNECTION_TIMEOUT:10000} # 10 sec
+      idle-timeout: ${POSTGRESQL_IDLE_TIMEOUT:0} # Value is "0" to disable idle timeout when act as recommended small fixed-size pool (minimum-idle = maximum-pool-size)
+      minimum-idle: ${POSTGRESQL_MIN_IDLE:5}
+      maximum-pool-size: ${POSTGRESQL_MAX_POOL_SIZE:5}
+  liquibase:
+    change-log: classpath:db/changelog.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ${MANAGEMENT_WEB_EXPOSURE:*}
+  server:
+    port: ${MANAGEMENT_SERVER_PORT:9999}
+    ssl:
+      enabled: true
+      key-store: ${SSL_KEYSTORE_PATH:/secret/sds-self-signed-store.jks}
+      key-store-password: ${SSL_KEYSTORE_PASSWORD:epamtver2019}
+      key-store-type: jks
+      key-alias: ${SSL_KEYSTORE_KEY_ALIAS:self_local_sans}
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+eureka:
+  client:
+    securePortEnabled: true
+    serviceUrl:
+      defaultZone: https://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    status-page-url: https://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/info
+    health-check-url: https://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/health
+    home-page-url: https://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/
+    non-secure-port-enabled: false
+    secure-port-enabled: true
+
+webclient:
+  auth:
+    isSecure: ${AUTH_SERVICE_IS_SECURE:true}
+    service: ${AUTH_SERVICE_NAME:auth-server}
+    checkTokenRoute: ${AUTH_SERVICE_CHECK_TOKEN_ROUTE:oauth/check_token}
+    serviceTokenRoute: ${AUTH_SERVICE_TOKEN_ROUTE:oauth/token}
+    basic:
+      username: ${SERVICE_CLIENT_ID:service}
+      password: ${SERVICE_CLIENT_SECRET:servicesecret}
+  pm:
+    isSecure: ${PROJECT_MANAGER_IS_SECURE:true}
+    service: ${PROJECT_MANAGER_SERVICE_NAME:project-manager}
+    internalProjectRoute: ${PROJECT_MANAGER_INTERNAL_PROJECT_ROUTE:api/internal/project}
+    internalNodesProjectRoute: ${PROJECT_MANAGER_INTERNAL_NODES_PROJECT_ROUTE:api/internal/nodes/project}
+    internalEventsProjectRoute: ${PROJECT_MANAGER_INTERNAL_EVENTS_PROJECT_ROUTE:api/internal/events/project}
+  jr:
+    isSecure: ${JOB_RUNNER_IS_SECURE:true}
+    service: ${JOB_RUNNER_SERVICE_NAME:job-runner}
+    internalSubmitRoute: ${JOB_RUNNER_INTERNAL_SUBMIT_ROUTE:api/internal/submit}
+  rc:
+    isSecure: ${REPORT_COMMUNICATOR_IS_SECURE:true}
+    service: ${REPORT_COMMUNICATOR_SERVICE_NAME:report-communicator}
+    reportsRoute: ${REPORT_COMMUNICATOR_REPORTS_ROUTE:api/reports}
+    reportsDefaultRoute: ${REPORT_COMMUNICATOR_REPORTS_DEFAULT_ROUTE:api/reports/default}
+  ds:
+    isSecure: ${DATA_SOURCE_IS_SECURE:true}
+    service: ${DATA_SOURCE_SERVICE_NAME:data-source}
+    route: ${DATA_SOURCE_ROUTE:api}
+  source-project-id: ${SOURCE_PROJECT_ID:40e54c23-a618-4e69-9d08-7d2f8a6176d4}
+  user-group-id: ${USER_GROUP_ID:f0c5951e-1d96-4fa5-a3ee-f0624e9206bf}
+  mlr:
+    scheme: ${MLR_CORE_SERVER_SCHEME:http}
+    host: ${MLR_CORE_SERVER_HOST:localhost}
+    port: ${MLR_CORE_SERVER_PORT:8080}
+    unstable-entities-route: ${MLR_UNSTABLE_ENTITIES_ROUTE:/api/unstable/entities}
+    auth:
+      username: ${MLR_CORE_BASIC_AUTH_USERNAME:mlrUser}
+      password: ${MLR_CORE_BASIC_AUTH_PASSWORD:mlrPwd}
+      user-service:
+        scheme: ${MLR_USER_SERVICE_SCHEME:http}
+        host: ${MLR_USER_SERVICE_HOST:localhost}
+        port: ${MLR_USER_SERVICE_PORT:8080}
+        user-find-route: ${MLR_USER_SERVICE_FIND_ROUTE:/user/find}
+      me-tokens:
+        scheme: ${MLR_ME_TOKENS_SCHEME:http}
+        host: ${MLR_ME_TOKENS_HOST:localhost}
+        port: ${MLR_ME_TOKENS_PORT:8080}
+        me-tokens-route: ${MLR_ME_TOKENS_ROUTE:/me/tokens}
+template:
+  methodic:
+    rb:
+      train-oos-oot: ${METHODIC_RB_TRAIN_OOS_OOT:00000000-0000-0000-0000-000000000099}
+      train-oos: ${METHODIC_RB_TRAIN_OOS:00000000-0000-0000-0000-000000000098}
+      train-oot: ${METHODIC_RB_TRAIN_OOT:00000000-0000-0000-0000-000000000097}
+    kib:
+      oos: ${METHODIC_KIB_OOS:00000000-0000-0000-0000-000000000096}
+      oot: ${METHODIC_KIB_OOT:00000000-0000-0000-0000-000000000095}
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: frontend
+      client-secret: secret
+      url-namespace: ${SDS_GATEWAY_HOST:https://sds-api-gateway-ci02132621-edevlg-sdsdevelop5.apps.test-ose.sigma.webfluxExample.ru}

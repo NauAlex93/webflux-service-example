@@ -1,0 +1,49 @@
+{
+  "authToken": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiOTljZGMxZTQtMWRmMi00OWJkLTg4MjItYmNkMzMzM2MxOWY2IiwiY3VycmVudExvZ2luIjoiMTg0NzA4NDgiLCJlbWFpbCI6Ill1cmtpbi5BLlZhQG9tZWdhLnNicmYucnUiLCJlbXBsb3llZU51bSI6IjE4MTIxNjYiLCJmaXJzdE5hbWUiOiIwSkRRdTlDMTBMclJnZEN3MEwzUXROR0EiLCJzZWNvbmROYW1lIjoiMEs3UmdOQzYwTGpRdlE9PSIsInBhdHJvbnltaWMiOiIwSkxRc05HQjBMalF1OUdNMExYUXN0QzQwWWM9Iiwicm9sZXMiOlt7InRwZSI6IlZhbGlkYXRvciIsImlzVmlydHVhbCI6ZmFsc2V9LHsidHBlIjoiQnVzaW5lc3MiLCJpc1ZpcnR1YWwiOmZhbHNlfSx7InRwZSI6IkRTIiwiaXNWaXJ0dWFsIjpmYWxzZX0seyJ0cGUiOiJCQURNIiwiaXNWaXJ0dWFsIjpmYWxzZX0seyJ0cGUiOiJDRE8iLCJpc1ZpcnR1YWwiOmZhbHNlfSx7InRwZSI6IkNEUyIsImlzVmlydHVhbCI6ZmFsc2V9XSwidGVhbXMiOlsiMTAyMjIyMzYiXSwiZXh0ZXJuYWxJZCI6InN1ZGlyVXNlcjoxODQ3MDg0OCIsImhhZG9vcExvZ2luIjoieXVya2luLWF2X2NhLXNicmYtcnUifSwidmVyc2lvbiI6IjMuNS4wLVNOQVBTSE9UIiwiZXhwaXJhdGlvbiI6MTYwNjk4Mzk2MDE0MCwidG9rZW5UeXBlIjoiQXV0aCJ9.vCIyeEEc69LGQ-7Wn1FFj2Xh8m2Hx76HuEOTF1xY1rM",
+  "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJjaGFpbkV4cGlyYXRpb24iOjE2MDcwMDEwNjAyMTQsInVzZXJMb2dpbiI6IjE4NDcwODQ4IiwiZXhwaXJhdGlvbiI6MTYwNjk4NDg2MDIxNCwidG9rZW5UeXBlIjoiUmVmcmVzaCJ9.ymap5dgv3hZDXhLf1Iup9McW5yg4mRS0VfMqHM1D1LY",
+  "authPayload": {
+    "user": {
+      "id": "99cdc1e4-1df2-49bd-8822-bcd3333c19f6",
+      "currentLogin": "18470848",
+      "email": "Yurkin.A.Va@omega.webfluxExample.ru",
+      "employeeNum": "1812166",
+      "firstName": "0JDQu9C10LrRgdCw0L3QtNGA",
+      "secondName": "0K7RgNC60LjQvQ==",
+      "patronymic": "0JLQsNGB0LjQu9GM0LXQstC40Yc=",
+      "roles": [
+        {
+          "tpe": "Validator",
+          "isVirtual": false
+        },
+        {
+          "tpe": "Business",
+          "isVirtual": false
+        },
+        {
+          "tpe": "DS",
+          "isVirtual": false
+        },
+        {
+          "tpe": "BADM",
+          "isVirtual": false
+        },
+        {
+          "tpe": "CDO",
+          "isVirtual": false
+        },
+        {
+          "tpe": "CDS",
+          "isVirtual": false
+        }
+      ],
+      "teams": [
+        "10222236"
+      ],
+      "externalId": "sudirUser:18470848",
+      "hadoopLogin": "yurkin-av_ca-webfluxExample-ru"
+    },
+    "version": "3.5.0-SNAPSHOT",
+    "expiration": 1606983960140,
+    "tokenType": "Auth"
+  }
+}

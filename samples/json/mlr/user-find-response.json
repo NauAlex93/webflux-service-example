@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "sudirUser:16837641",
+      "firstName": "-",
+      "secondName": "-",
+      "patronymic": "-",
+      "email": "-@omega.webfluxExample.ru",
+      "employeeNum": "1674258",
+      "roles": [
+        "g_cm_a_mlr_r_bcds",
+        "g_cm_a_mlr_r_ds",
+        "g_cm_a_mlr_appusr",
+        "g_cm_a_mlr_r_sdev",
+        "g_cm_a_mlr_r_badm",
+        "g_cm_a_mlr_r_adtsva",
+        "g_cm_a_mlr_d_risk",
+        "g_cm_a_mlr_r_cdo",
+        "g_cm_a_mlr_r_cds",
+        "g_cm_a_mlr_r_adm",
+        "g_cm_a_mlr_r_vld",
+        "g_cm_a_mlr_r_bsn",
+        "g_cm_a_mlr_r_bcdo",
+        "g_cm_a_mlr_r_adt"
+      ],
+      "logins": [
+        {
+          "username": "16837641",
+          "$type": "SudirLogin"
+        },
+        {
+          "username": "ushankin1-ia_ca-webfluxExample-ru",
+          "$type": "IpaLogin"
+        }
+      ],
+      "isSuspended": false
+    }
+  ],
+  "filteredCount": 1457,
+  "totalCount": 2,
+  "$type": "Success"
+}
